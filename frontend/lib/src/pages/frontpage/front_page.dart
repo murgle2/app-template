@@ -41,7 +41,7 @@ class _FrontPage extends State<FrontPage> {
   Widget build(BuildContext context) {
     return const DefaultTabController(
         initialIndex: 0,
-        length: 2,
+        length: 0,
         child: Scaffold(
           appBar: PreferredSize(
               preferredSize: Size.fromHeight(kToolbarHeight),

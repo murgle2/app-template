@@ -99,12 +99,9 @@ class _MainAppBarState extends State<MainAppBar> {
                 width: kToolbarHeight + 50.0,
                 child: TextButton(
                     child: Row(
-                      children: [
-                        Image.asset("assets/images/appbaricon.png",
-                            width: 40, height: 40),
-                        const SizedBox(width: 10),
-                        const Text(
-                          "Xpo",
+                      children: const [
+                        Text(
+                          APP_NAME,
                           style: TextStyle(color: Colors.white, fontSize: 16.0),
                         ),
                       ],
@@ -205,8 +202,9 @@ class _MainAppBarState extends State<MainAppBar> {
                                     child: SizedBox(
                                       child: Center(
                                         child: Container(
-                                          margin: const EdgeInsetsDirectional.only(
-                                              start: 1.0, end: 1.0),
+                                          margin:
+                                              const EdgeInsetsDirectional.only(
+                                                  start: 1.0, end: 1.0),
                                           height: 1.0,
                                           color: userNotifier.getColor(
                                               userNotifier.COLOR_TEXT),
