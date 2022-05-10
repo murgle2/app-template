@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "restapi"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+uvicorn = "^0.13.4"
+fastapi = "^0.70.1"
+pydantic = "^1.8.1"
+emails = "^0.5.15"
+requests = "^2.23.0"
+pytest = "^6.2.3"
+typing-extensions = "^3.7.4"
+jinja2 = "^2.11.2"
+psycopg2-binary = "^2.8.6"
+sqlalchemy = "^1.4.23"
+passlib = "^1.7.4"
+bcrypt = "^3.2.0"
+python-jose = "^3.2.0"
+email-validator = "^1.1.2"
+python-dotenv = "^0.17.0"
+cryptography = "^35.0.0"
+python-multipart = "^0.0.5"
+google-auth = "^2.6.0"
+siwa = "^0.0.7"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7.9"
+pytest = "^6.2.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

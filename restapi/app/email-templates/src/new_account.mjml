@@ -1,0 +1,15 @@
+<mjml>
+  <mj-body background-color="#fff">
+    <mj-section>
+      <mj-column>
+        <mj-image width="250px" src=""/>
+        <mj-text font-size="20px" color="#555" font-family="helvetica">Thanks for signing up!</mj-text>
+          <mj-text font-size="16px" color="#555">
+            {{ project_name }} will keep you up up-to-date with anything new.
+          </mj-text>
+        <mj-divider border-color="#555" border-width="2px" />
+        <mj-text font-size="14px" color="#555">If you did not sign up you can disregard this email.</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

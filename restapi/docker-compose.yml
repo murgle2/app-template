@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:12
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PW}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+    - ../postgres:/var/lib/postgresql/data
+
+  api:
+    depends_on:
+      - db
+    restart: always
+    volumes:
+      - ./app:/app
+    ports:
+      - "80:8080"
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
