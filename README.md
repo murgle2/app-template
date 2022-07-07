@@ -1,5 +1,5 @@
 # app-template
-
+App template with client-side flutter app and fastapi server-side
 ## Features
 * UI scaffold with app bar and empty body
 * Flutter navigator 2.0 implemented
