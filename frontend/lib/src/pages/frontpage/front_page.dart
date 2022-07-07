@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/resources/config.dart';
 import 'package:frontend/src/pages/frontpage/center_page.dart';
 import 'package:frontend/src/pages/frontpage/main_app_bar.dart';
 import 'package:frontend/src/dialog/signup_dialog.dart';
@@ -12,8 +13,6 @@ class FrontPage extends StatefulWidget {
 }
 
 class _FrontPage extends State<FrontPage> {
-  final keyAskToSignup = 'ask_to_sign_up';
-  final keyToken = 'token';
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
   @override
@@ -39,14 +38,11 @@ class _FrontPage extends State<FrontPage> {
 
   @override
   Widget build(BuildContext context) {
-    return const DefaultTabController(
-        initialIndex: 0,
-        length: 0,
-        child: Scaffold(
-          appBar: PreferredSize(
-              preferredSize: Size.fromHeight(kToolbarHeight),
-              child: MainAppBar()),
-          body: CenterPage(),
-        ));
+    return const Scaffold(
+      appBar: PreferredSize(
+          preferredSize: Size.fromHeight(kToolbarHeight),
+          child: MainAppBar()),
+      body: CenterPage(),
+    );
   }
 }

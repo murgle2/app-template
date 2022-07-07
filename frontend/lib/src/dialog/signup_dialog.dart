@@ -20,9 +20,7 @@ class SignupDialog extends StatefulWidget {
 }
 
 class _SignupDialogState extends State<SignupDialog> {
-  final keyAskToSignup = 'ask_to_sign_up';
   late SharedPreferences prefs;
-  final keyToken = 'token';
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   bool isLoading = false;
 

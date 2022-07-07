@@ -12,7 +12,7 @@ class PanelItem extends StatelessWidget {
     return Consumer<UserNotifier>(
         builder: (context, userNotifier, _) => Container(
               width: 300,
-              padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+              padding: const EdgeInsets.fromLTRB(10, 5, 10, 10),
               decoration: BoxDecoration(
                   color: userNotifier.getColor(userNotifier.COLOR_PANEL),
                   borderRadius: BorderRadius.circular(10),
@@ -21,7 +21,7 @@ class PanelItem extends StatelessWidget {
               child: DefaultTextStyle.merge(
                   style: TextStyle(
                       color: userNotifier.getColor(userNotifier.COLOR_TEXT), fontSize: 18),
-                  child: this.child),
+                  child: child),
             ));
   }
 }

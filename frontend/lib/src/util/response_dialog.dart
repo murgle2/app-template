@@ -14,7 +14,7 @@ class ResponseDialog extends StatelessWidget {
     return AlertDialog(
       backgroundColor: COLOR_TRANSPARENT,
       title: Text(isError ? "Please try again" : "Success",
-          style: TextStyle(fontWeight: FontWeight.bold)),
+          style: const TextStyle(fontWeight: FontWeight.bold)),
       content: Text(response),
       actions: [
         TextButton(

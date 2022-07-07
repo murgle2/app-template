@@ -22,7 +22,6 @@ class _LoginDialogState extends State<LoginDialog> {
   late TextEditingController emailController;
   final passwordController = TextEditingController();
   bool _isObscure = true;
-  final keyToken = 'token';
   bool _focusPassword = false;
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   bool isLoading = false;

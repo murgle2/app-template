@@ -5,5 +5,5 @@ import 'package:frontend/src/app.dart';
 
 void main() {
   configureApp();
-  runApp(App());
+  runApp(const App());
 }

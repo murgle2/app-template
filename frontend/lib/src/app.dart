@@ -21,6 +21,7 @@ class _AppState extends State<App> {
     return ChangeNotifierProvider<UserNotifier>(
         create: (_) => UserNotifier(),
         child: MaterialApp.router(
+          title: APP_NAME,
           routerDelegate: MyRouterDelegate(
             routes: {
               ROUTE_HOME: (context) => FrontPage(),

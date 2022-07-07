@@ -23,8 +23,8 @@ class OtherAppBar extends StatelessWidget {
                     children: [
                       Image.asset("assets/images/appbaricon.png",
                           width: 40, height: 40),
-                      SizedBox(width: 10),
-                      Text(
+                      const SizedBox(width: 10),
+                      const Text(
                         "Home",
                         style: TextStyle(color: Colors.white, fontSize: 16.0),
                       ),

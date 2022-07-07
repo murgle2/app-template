@@ -22,7 +22,6 @@ class UpdatePage extends StatefulWidget {
 }
 
 class _UpdatePageState extends State<UpdatePage> {
-  final keyToken = 'token';
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   late String? token;
 

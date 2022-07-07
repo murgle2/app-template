@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/resources/config.dart';
 import 'package:frontend/resources/user_notifier.dart';
 import 'package:frontend/src/models/user_model.dart';
 import 'package:frontend/src/services/user_service.dart';
@@ -15,7 +16,6 @@ class CenterPage extends StatefulWidget {
 }
 
 class _CenterPage extends State<CenterPage> {
-  final keyToken = 'token';
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   late String? token;
 
@@ -56,12 +56,6 @@ class _CenterPage extends State<CenterPage> {
     return Consumer<UserNotifier>(
         builder: (context, userNotifier, _) => Container(
               color: userNotifier.getColor(userNotifier.COLOR_BACKGROUND),
-              child: Stack(children: const [
-                TabBarView(
-                  children: [
-                  ],
-                ),
-              ]),
             ));
   }
 }
