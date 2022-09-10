@@ -1,6 +1,6 @@
-# Chat API
+# Rest API
 
-REST API built with FastAPI and python.
+Built with FastAPI and python.
 
 **To Run:**
 
